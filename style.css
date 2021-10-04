@@ -2,3 +2,22 @@
     margin: opx;
     padding: 0px;
 }
+body{
+    align-items: center;
+    justify-content: center;
+    /* min-width: 300px; */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.logo img{
+    width: 20%;
+}
+
