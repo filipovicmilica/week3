@@ -246,3 +246,39 @@ body{
 
     color: #28283D;
 }
+
+/* gallery */
+.gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.men{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.women{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+img{
+    width: 50%;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+@media (max-width:370px){
+    .gallery{
+        flex-direction: column;
+    }
+    .men{
+        margin-left: 0%;
+    }
+
+}
