@@ -73,6 +73,11 @@ body{
     line-height: 26px;
 
     text-align: center;
+    transition: 0.8s;
+}
+
+.btn1:hover{
+    background-color: #71C0D4;
 }
 
 .btn2{
@@ -91,8 +96,12 @@ body{
     line-height: 26px;
 
     text-align: center;
+    transition: 0.8s;
 }
 
+.btn2:hover{
+    background-color: #B18BDD;
+}
 .header-content h1{
     font-family: 'Red Hat Display';
     font-style: normal;
