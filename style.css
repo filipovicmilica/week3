@@ -7,6 +7,7 @@ body{
     justify-content: center;
     /* min-width: 300px; */
     margin: 0px -20px 0px -20px;
+    
 }
 
 /* logo */
@@ -43,7 +44,7 @@ body{
     background-color: white;
     width: 50%;
 }
-.header p{
+.header-content p{
     text-align: center;
     padding: 5% 10% 5% 10%;
 }
@@ -62,6 +63,15 @@ body{
     border-radius: 29px;
     padding: 10px 20px 10px 20px;
     border:0px;
+    cursor: pointer;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
 }
 
 .btn2{
@@ -71,10 +81,32 @@ body{
     padding: 10px 20px 10px 20px;
     border:0px;
     margin-left: 15px;
+    cursor: pointer;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+}
+
+.header-content h1{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    /* or 110% */
+
+    text-align: center;
+
+    color: #28283D;
 }
 @media (max-width:700px){
     .header{
-        background-size: 100%;
+        background-size: 104%;
         background-repeat: no-repeat;
     }
     .header-content{
@@ -94,6 +126,7 @@ body{
     }
     .btn2{
         margin-left: 0px;
+        margin-top: 7%;
     }
 }
 
@@ -104,31 +137,48 @@ body{
     align-items: center;
     justify-content: center;
 
-    background-image: url(assets/desktop/image-footer.jpg);
-    background-color: #4D96A9;
+    background: linear-gradient(hsla(190, 46%, 36%, 0.836),hsla(190, 42%, 38%, 0.904)), 
+                url('assets/desktop/image-footer.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 
     padding: 7% 15% 7% 15%;
-    
 }
 
 .footer h2{
     text-align: center;
-    color: white;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+
+    color: #FAFAFA;
 }
 
 .footer p{
     text-align: center;
     margin: 0px 10% 0px 10%;
-    color: white;
+    color: #FAFAFA;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 
 @media (max-width:700px){
     .footer{
         flex-direction: column;
-        background-image: url(assets/tablet/image-footer.jpg);
-
+        /* background-image: url(assets/tablet/image-footer.jpg); */
+        background: 
+        linear-gradient(hsla(190, 46%, 36%, 0.836),hsla(190, 42%, 38%, 0.904)),
+                     url('assets/tablet/image-footer.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     
     .footer button{
@@ -137,9 +187,62 @@ body{
 
 }
 
-@media (max-width:320px){
+@media (max-width:370px){
     .footer{
-        background-image: url(assets/mobile/image-footer.jpg);
+        /* background-image: url(assets/mobile/image-footer.jpg); */
+         background:linear-gradient(hsla(190, 46%, 36%, 0.836),hsla(190, 42%, 38%, 0.904)),
+                    url('assets/mobile/image-footer.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+   
     }
 
+}
+
+.blue-title{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #4D96A9;
+}
+
+.small-text{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    text-align: center;
+
+    color: #87879D;
+}
+
+.div-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.div-main h2{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    /* or 112% */
+
+    text-align: center;
+
+    color: #28283D;
 }
