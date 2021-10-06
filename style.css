@@ -1,0 +1,345 @@
+*{
+    /* margin: 0px; */
+    padding: 0px;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    /* min-width: 300px; */
+    margin: 0px -20px 0px -20px;
+    
+}
+
+/* logo */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* 
+    margin-top: 10%;
+    margin-bottom: 10%; */
+}
+
+.logo img{
+    width: 80px;
+}
+
+/* header */
+.header{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(assets/tablet/image-hero.png);
+    background-size: 50%;
+    background-repeat: repeat-x;
+
+    margin-bottom: 10%;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    width: 50%;
+}
+.header-content p{
+    text-align: center;
+    padding: 5% 10% 5% 10%;
+}
+.div-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.btn1{
+    background-color: #4D96A9;
+    color: white;
+    border-radius: 29px;
+    padding: 10px 20px 10px 20px;
+    border:0px;
+    cursor: pointer;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+    transition: 0.8s;
+}
+
+.btn1:hover{
+    background-color: #71C0D4;
+}
+
+.btn2{
+    background-color: #855FB1;
+    color: white;
+    border-radius: 29px;
+    padding: 10px 20px 10px 20px;
+    border:0px;
+    margin-left: 15px;
+    cursor: pointer;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+    transition: 0.8s;
+}
+
+.btn2:hover{
+    background-color: #B18BDD;
+}
+.header-content h1{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+
+    text-align: center;
+    color: #28283D;
+    margin: 0px;
+    width: 80%;
+}
+@media (max-width:700px){
+    .header{
+        background-size: 104%;
+        background-repeat: no-repeat;
+    }
+    .header-content{
+        width: 100%;
+        margin-top: 40%;
+    }
+
+    .header p{
+        padding: 5% 20% 5% 20%;
+    }
+    .header-content h1{
+        margin-top: 10%;
+    }
+
+}
+
+@media (max-width:320px){
+    .div-buttons{
+        flex-direction: column;
+    }
+    .btn2{
+        margin-left: 0px;
+        margin-top: 7%;
+    }
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(hsla(190, 46%, 36%, 0.836),hsla(190, 42%, 38%, 0.904)), 
+                url('assets/desktop/image-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 7% 10% 7% 10%;
+}
+
+.footer h2{
+    text-align: center;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+
+    color: #FAFAFA;
+
+    flex-basis: 30%;
+}
+
+.footer p{
+    text-align: center;
+    margin: 0px 10% 0px 10%;
+    color: #FAFAFA;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    flex-basis: 40%;
+}
+.footer button{
+    flex-basis: 30%;
+}
+
+
+@media (max-width:700px){
+    .footer{
+        flex-direction: column;
+        /* background-image: url(assets/tablet/image-footer.jpg); */
+        background: 
+        linear-gradient(hsla(190, 46%, 36%, 0.836),hsla(190, 42%, 38%, 0.904)),
+                     url('assets/tablet/image-footer.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .footer button{
+        margin-top: 10%;
+    }
+
+}
+
+@media (max-width:370px){
+    .footer{
+        /* background-image: url(assets/mobile/image-footer.jpg); */
+         background:linear-gradient(hsla(190, 46%, 36%, 0.836),hsla(190, 42%, 38%, 0.904)),
+                    url('assets/mobile/image-footer.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+   
+    }
+
+}
+
+/* main/center */
+.blue-title{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #4D96A9;
+}
+
+.small-text{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #87879D;
+}
+
+.div-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.div-main h2{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    /* or 112% */
+
+    text-align: center;
+
+    color: #28283D;
+}
+
+.width-elem{
+    width: 50%;
+}
+@media (max-width:700px){
+    .width-elem{
+        width: 90%;
+    }
+
+}
+
+/* gallery */
+.gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 10%;
+    
+}
+.men{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.women{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+img{
+    width: 50%;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+@media (max-width:370px){
+    .gallery{
+        flex-direction: column;
+    }
+    .men{
+        margin-left: 0%;
+    }
+
+}
+/* circles */
+.little-circle{
+    /* margin-top: 20%; */
+    background: #FAFAFA;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    box-sizing: border-box;
+    border-radius: 29px;
+    padding: 20px 22px 20px 22px;
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    /* font-size: 16px; */
+    /* line-height: 26px; */
+    color: #87879D;
+}
+
+.vert-line{
+    width: 1px;
+    height: 100px;
+    background-color: #87879D;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    border: 1px solid #87879D;
+}
+
+.displacement{
+    transform: translate(0%,50%);
+}
