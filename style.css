@@ -66,7 +66,7 @@ body{
     border:0px;
     cursor: pointer;
 
-    font-family: 'Red Hat Display';
+    font-family:'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -89,7 +89,7 @@ body{
     margin-left: 15px;
     cursor: pointer;
 
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -103,7 +103,7 @@ body{
     background-color: #B18BDD;
 }
 .header-content h1{
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
@@ -161,7 +161,7 @@ body{
 .footer h2{
     text-align: center;
 
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
@@ -177,7 +177,7 @@ body{
     margin: 0px 10% 0px 10%;
     color: #FAFAFA;
 
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -221,7 +221,7 @@ body{
 
 /* main/center */
 .blue-title{
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -236,7 +236,7 @@ body{
 }
 
 .small-text{
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -255,7 +255,7 @@ body{
 }
 
 .div-main h2{
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
@@ -316,19 +316,29 @@ img{
 }
 /* circles */
 .little-circle{
+    display: flex;
+    justify-content: center;
+
     /* margin-top: 20%; */
     background: #FAFAFA;
     border: 1px solid rgba(135, 135, 157, 0.25);
-    box-sizing: border-box;
-    border-radius: 29px;
-    padding: 20px 22px 20px 22px;
+    /* box-sizing: border-box; */
+    /* border-radius: 29px; */
+    /* padding: 20px 22px 20px 22px; */
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
 
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 900;
     /* font-size: 16px; */
     /* line-height: 26px; */
     color: #87879D;
+}
+.little-circle span{
+    top:16px;
+    position: relative;
 }
 
 .vert-line{
